@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: your name and a one-line description -->
+  <title>Your Name — 3D Artist</title>
+  <meta name="description" content="3D art, renders and models by Your Name.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Lets visitors rotate your .glb models in the browser -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top">YOUR NAME</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <!-- EDIT: swap images/hero.svg for your best render -->
+      <div class="hero-bg" style="background-image:url('images/hero.svg')"></div>
+      <div class="hero-text">
+        <p class="eyebrow">3D Artist</p>
+        <h1>Your Name</h1>
+        <p class="lead">Characters, environments and props — modeled, textured and rendered.</p>
+        <a class="btn" href="#work">View work</a>
+      </div>
+    </section>
+
+    <section id="work" class="wrap">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section id="about" class="wrap about">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div>
+          <!-- EDIT: write a few lines about yourself -->
+          <p>I'm a 3D artist focused on stylized characters and environments. I enjoy taking a piece from blockout to final render — sculpting, retopology, texturing and lighting.</p>
+          <p>Open to freelance and studio work.</p>
+          <a class="btn btn-outline" href="resume.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul class="tags">
+            <li>Blender</li>
+            <li>ZBrush</li>
+            <li>Substance Painter</li>
+            <li>Marmoset Toolbag</li>
+            <li>Unreal Engine</li>
+          </ul>
+          <h3>Skills</h3>
+          <ul class="tags">
+            <li>Hard surface</li>
+            <li>Sculpting</li>
+            <li>PBR texturing</li>
+            <li>Lighting &amp; rendering</li>
+            <li>Game-ready assets</li>
+          </ul>
+          <h3>Experience</h3>
+          <ul class="timeline">
+            <li><b>2025 – now</b> Freelance 3D artist</li>
+            <li><b>2024</b> Environment artist — <i>Project name</i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap contact">
+      <h2>Let's work together</h2>
+      <p class="lead">Commissions, studio roles or just a hello.</p>
+      <!-- EDIT: your email and links -->
+      <a class="btn" href="mailto:hello@nopakunwong.com">hello@nopakunwong.com</a>
+      <ul class="socials">
+        <li><a href="https://www.artstation.com" target="_blank" rel="noopener">ArtStation</a></li>
+        <li><a href="https://sketchfab.com" target="_blank" rel="noopener">Sketchfab</a></li>
+        <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Your Name</footer>
+
+  <dialog id="lightbox">
+    <button class="close" aria-label="Close">✕</button>
+    <div id="lb-media"></div>
+    <div class="lb-info">
+      <h3 id="lb-title"></h3>
+      <p id="lb-note"></p>
+    </div>
+  </dialog>
+
+  <script src="artwork.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
